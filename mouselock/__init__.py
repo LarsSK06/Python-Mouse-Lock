@@ -1,1 +1,1 @@
-from .main import Lock
+from .main import *

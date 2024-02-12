@@ -6,7 +6,9 @@ from time import sleep
 class Lock:
 
     __locked = False
-    __mouse = Controller()
+
+    def __init__(self):
+        self.__mouse = Controller()
 
     def __lock(self, tick_delay, position):
         while self.__locked:
